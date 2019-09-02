@@ -82,7 +82,7 @@ Cannot use HTML comments.
 </div>
 ```
 
-Can only use single line expressions in JSX.
+Can only return a single root element.
 
 ```javascript
 return (
