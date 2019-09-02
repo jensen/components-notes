@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+body {
+  background-color: #2C3E50;
+  color: #2C3E50;
+  font-family: Raleway, sans-serif;
+}
+
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  float: right;
+  opacity: 1;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+button:active {
+  opacity: 1;
+}
+
+header.container {
+  background-color: #27AE60;
+  color: #fff;
+  left: 50%;
+  margin-left: -207px;
+  /* margin-top: -347px; */
+  position: fixed;
+  width: 414px;
+}
+
+header.container section.brand {
+  padding: 20px;
+}
+
+header.container span.name {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 800;
+  height: 24px;
+  line-height: 24px;
+  margin: 0 0 0 20px;
+  vertical-align: top;
+}
+
+header.container button.compose {
+  background-image: url("/images/add.png");
+  height: 24px;
+  width: 27px;
+}
+
+header.container button.close {
+  transform: rotateZ(45deg);
+}
+
+header.container section.create textarea.textarea {
+  background-color: #fff;
+  border: 0;
+  color: #2C3E50;
+  font-size: 1.2rem;
+  height: 172px;
+  overflow: scroll;
+  padding: 20px;
+  resize: none;
+  width: 100%;
+}
+
+header.container section.create textarea.textarea:focus {
+  outline: none;
+}
+
+header.container section.create div.status {
+  background-color: #ECF0F1;
+  padding: 10px 20px 10px 20px;
+  margin-top: -4px;
+}
+
+header.container section.create div.status span.error {
+  color: #E74C3C;
+}
+
+header.container section.create div.status span.counter {
+  font-weight: 800;
+  float: right;
+}
+
+header.container section.create div.status span.over {
+  color: #E74C3C;
+}
+
+header.container section.create button.post {
+  background-color: #27AE60;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 20px;
+  width: 100%;
+}
+
+header.container section.create button.post:hover {
+  background-color: #2ECC71;
+  cursor: pointer;
+}
+
+header.container section.create button.post:active {
+  background-color: #27AE60;
+}
+
+main.container {
+  height: 100%;
+  margin: 347px auto 0 auto;
+  width: 414px;
+}
+
+article.post {
+  background-color: #ECF0F1;
+  border-bottom: dashed 2px #2C3E50;
+  padding: 20px;
+}
+
+article.post header.post img.avatar {
+  border-radius: 50%;
+  border: 4px solid #2C3E50;
+  margin-right: 20px;
+}
+
+span.user {
+  display: inline-block;
+  vertical-align: top;
+}
+
+span.user div.name {
+  font-size: 1.5rem;
+}
+
+span.like {
+  float: right;
+}
+
+span.like button.like {
+  background-image: url("/images/heart-light.png");
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.5rem;
+  display: block;
+  height: 32px;
+  width: 35px;
+}
+
+span.like button.liked {
+  background-image: url("/images/heart-dark.png");
+}
+
+article.post:last-child {
+  border-bottom: none;
+}
